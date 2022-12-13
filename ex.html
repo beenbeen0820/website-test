@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./sample.css">
+     <title>Document</title>
+
+     <style>
+       .main {
+         color: #f2fcfe; display: table; margin-left: auto; margin-right: auto;
+       }
+
+       body {
+  width: 1880px;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+       ::selection{
+	     color : green;
+       background-color : #FFBF00; /* 변경하려는 컬러 코드*/
+       text-decoration : underline;}
+
+       ul {
+                list-style: none; /* 리스트 마커 없앰 */
+                text-align: center;
+                border-top:
+                2px solid black;
+                border-bottom: 2px
+                solid black;
+                padding: 10px 0;
+            }
+            ul li {
+                display: inline; /* 인라인 태그로 바꿈 */
+                text-transform: uppercase;
+                padding: 0 30px; letter-spacing: 3px;
+            }
+            ul li a {text-decoration:none; color: black;}
+            ul li a:hover {text-decoration: underline;}
+
+            body {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            .gradcircle {
+                width: 100px;
+                height: 100px;
+                border-radius: 5rem;
+                background: linear-gradient(to right top, #861657, #ffa69e);
+                display: table; margin-left: auto; margin-right: auto;
+            }
+
+            h1 {
+                font-size: 60px;
+                background: linear-gradient(to right top, #861657, #ffa69e);
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+     </style>
+
+
+</head>
+<body>
+
+    <header>
+      <nav>
+<strong>
+    <ul>
+      <li><a href="http://localhost/page_1.html">누구인가?</a></li>
+      <li><a href="http://localhost/page_2.html">자랑</a></li>
+      <li><a href="http://localhost/page_3.html">명언소개</a></li>
+      <li><a href="http://localhost/page_4.html">메모장</a></li>
+   </ul>
+</strong>
+
+</nav>
+<h1>HELLO, LEEYUBIN!</h1>
+<div class="gradcircle"></div>
+
+        <h2 class="main">웹사이트 공사 중</h2>
+    </header>
+</body>
+</html>

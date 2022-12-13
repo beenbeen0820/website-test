@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./sample.css">
+     <title>Document</title>
+
+     <style>
+
+       ::selection{
+	     color : green;
+       background-color : #FFBF00; /* 변경하려는 컬러 코드*/
+       text-decoration : underline;}
+
+
+            body {
+                width: 1860px;
+                background: linear-gradient(to right, #74ebd5, #acb6e5);
+
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            #wrap {
+                width:510px;
+                margin: 0 auto;
+                overflow: hidden;
+                padding-top: 10px;
+            }
+
+            p {
+              font-size: 15px
+            }
+            h1 {
+                font-size: 60px;
+                background: linear-gradient(to right top, #861657, #ffa69e);
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+
+            .dropdown > ul > li {
+              display: inline-block;
+              position: relative;
+            }
+            .dropdown > ul > li > ul {
+              position: absolute;
+              list-style-type: none;
+              padding-left: 0px;
+              display: none;
+            }
+            .dropdown > ul > li:hover > ul {
+              display: block;
+            }
+
+          article{
+              float: left;
+              margin-left: 10px;
+              margin-bottom: 10px;
+            }
+              img{display: block;}
+
+     </style>
+
+
+</head>
+    <div class="dropdown">
+      <ul>
+        <li>
+          <strong><a href="http://localhost/ex0.html">HOME</a></strong>
+        </li>
+        <li>
+          <a href="#">Ipsum</a>
+          <ul>
+            <li><a href="#">Consectetur</a></li>
+            <li><a href="#">Amet</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Dolor</a>
+          <ul>
+            <li><a href="#">Adipiscing</a></li>
+            <li><a href="#">Elit</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  <body>
+    <p>이스터에그를 잘 찾으셨네요! 이곳은 제가 찍은 사진을 자랑하는 공간입니다. 사진을 클릭하면 저의 인스타 계정으로 이동됩니다. 신기하죠?</p>
+    <header>
+      <h1></h1>
+    </header>
+      <div id='wrap'>
+        <article><img src="img/su.jpg" alt="My Image" width="245" height="245" onclick="location.href='https://www.instagram.com/reason_been/'"></article>
+        <article><img src="img/cafe.jpg" alt="My Image" width="245" height="245" onclick="location.href='https://www.instagram.com/reason_been/'"></article>
+        <article><img src="img/무지개.jpg" alt="My Image" width="500" height="500" onclick="location.href='https://www.instagram.com/reason_been/'"></article>
+      </div>
+  </body>
+</html>
